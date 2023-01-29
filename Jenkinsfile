@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh 'composer install --no-interaction'
             }
         }
         stage('Test') {
